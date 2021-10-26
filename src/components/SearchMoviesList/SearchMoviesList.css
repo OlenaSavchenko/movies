@@ -1,0 +1,17 @@
+.MoviesList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.MoviesItem {
+  width: 15%;
+  margin-right: 15px;
+}
+
+
+.MoviesLink {
+  text-decoration: none;
+  color: black;
+}

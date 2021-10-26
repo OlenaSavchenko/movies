@@ -1,0 +1,17 @@
+.PopularMoviesTitle {
+  margin-left: 40px;
+}
+
+.PopularMoviesList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.PopularMoviesItem {
+  border-radius: 4px;
+  box-shadow: -2px 3px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
