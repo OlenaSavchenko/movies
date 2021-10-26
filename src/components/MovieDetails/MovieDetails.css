@@ -5,3 +5,32 @@
     background-color: black;
     color: blanchedalmond;
 }
+
+.MovieDetailsBox {
+    display: grid;
+    grid-template-areas: "movieTitle movieTitle"
+                          "movieImage movieContent";
+justify-content: center;
+align-content: flex-start;
+column-gap: 30px;
+max-width: 900px;
+margin: 0 auto;
+padding: 10px;
+box-shadow: -2px 3px 8px 0px rgba(34, 60, 80, 0.2);
+border-radius:4px;
+}
+
+.MovieDetailsTitle {
+    grid-area: movieTitle;
+    justify-self: center;
+}
+
+.MovieDetailsImg{
+    grid-area: movieImage;
+    border-radius: 4px;
+}
+
+.MovieDetailsContent{
+    grid-area: movieContent;
+
+}

@@ -6,6 +6,7 @@ import ReviewsList from '../components/ReviewsList';
 import MovieDetails from '../components/MovieDetails';
 import routes from '../routes';
 import { getMovieApi } from '../services/api';
+import "./MovieDetailsPageView.css"
 
 class MovieDetailsPageView extends Component {
   static propTypes = {
@@ -52,15 +53,15 @@ class MovieDetailsPageView extends Component {
     return (
       <>
         <MovieDetails movie={movie} onButtonClick={this.handleGoBack} />
+        <div className="MovieDetailsLinksWrapper">
+          <NavLink to={`${url}/cast`} className="MovieCastLink" activeClassName="MovieCastLink--active">
+            <p>The cast</p>
+          </NavLink>
 
-        <NavLink to={`${url}/cast`}>
-          <p>The cast</p>
-        </NavLink>
-
-        <NavLink to={`${url}/reviews`}>
-          <p>Reviews</p>
-        </NavLink>
-
+          <NavLink to={`${url}/reviews`} className="MovieReviewsLink" activeClassName="MovieReviewsLink--active">
+            <p>Reviews</p>
+          </NavLink>
+        </div>
         <Route path={routes.movieCast} component={CastList} />
         <Route path={routes.movieReviews} component={ReviewsList} />
       </>

@@ -1,0 +1,18 @@
+.MovieDetailsLinksWrapper {
+   display: flex;
+   justify-content: center; 
+}
+
+.MovieCastLink, .MovieReviewsLink{
+text-decoration: none;
+text-align: center;
+color: black;
+}
+
+.MovieCastLink--active, .MovieReviewsLink--active {
+color:brown; 
+}
+
+.MovieCastLink {
+margin-right: 20px;
+}
